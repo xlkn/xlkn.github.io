@@ -1,0 +1,23 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on 0xLKN</title>
+        <link>/posts/</link>
+        <description>Recent content in Posts on 0xLKN</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>Paul Larkin</copyright>
+        <lastBuildDate>Fri, 24 Jan 2020 20:45:02 +0000</lastBuildDate>
+        <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Hello World</title>
+            <link>/posts/hello-world/</link>
+            <pubDate>Fri, 24 Jan 2020 20:45:02 +0000</pubDate>
+            
+            <guid>/posts/hello-world/</guid>
+            <description></description>
+            <content type="html"><![CDATA[]]></content>
+        </item>
+        
+    </channel>
+</rss>
