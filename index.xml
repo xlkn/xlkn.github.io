@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>0xLKN</title>
-    <link>/</link>
+    <link>xlkn.github.io/</link>
     <description>Recent content on 0xLKN</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Paul Larkin</copyright>
     <lastBuildDate>Fri, 24 Jan 2020 20:45:02 +0000</lastBuildDate>
     
-	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="xlkn.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Hello World</title>
-      <link>/posts/hello-world/</link>
+      <link>xlkn.github.io/posts/hello-world/</link>
       <pubDate>Fri, 24 Jan 2020 20:45:02 +0000</pubDate>
       
-      <guid>/posts/hello-world/</guid>
+      <guid>xlkn.github.io/posts/hello-world/</guid>
       <description></description>
     </item>
     
     <item>
       <title></title>
-      <link>/about/</link>
+      <link>xlkn.github.io/about/</link>
       <pubDate>Fri, 24 Jan 2020 20:40:46 +0000</pubDate>
       
-      <guid>/about/</guid>
+      <guid>xlkn.github.io/about/</guid>
       <description>Hi! My name is Paul Larkin. Am currently a computing student and in my spare time I love participating in CTF&#39;s, searching for bugs in mobile applications and reverse engineering malware. Amongst my other intrests, i also enjoy programing where am beginning to explore data analysis and machine learning related to automated malware detection.
 Interests  Malware Analysis Mobile and Web Application Security CTF&#39;s Data Science  </description>
     </item>
