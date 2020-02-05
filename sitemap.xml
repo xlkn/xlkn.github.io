@@ -3,31 +3,31 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>xlkn.github.io/posts/hello-world/</loc>
+    <loc>/posts/hello-world/</loc>
     <lastmod>2020-01-24T20:45:02+00:00</lastmod>
   </url>
   
   <url>
-    <loc>xlkn.github.io/about/</loc>
+    <loc>/about/</loc>
     <lastmod>2020-01-24T20:40:46+00:00</lastmod>
   </url>
   
   <url>
-    <loc>xlkn.github.io/</loc>
+    <loc>/</loc>
     <lastmod>2020-01-24T20:45:02+00:00</lastmod>
   </url>
   
   <url>
-    <loc>xlkn.github.io/posts/</loc>
+    <loc>/posts/</loc>
     <lastmod>2020-01-24T20:45:02+00:00</lastmod>
   </url>
   
   <url>
-    <loc>xlkn.github.io/categories/</loc>
+    <loc>/categories/</loc>
   </url>
   
   <url>
-    <loc>xlkn.github.io/tags/</loc>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
