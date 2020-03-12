@@ -1,22 +1,76 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Posts on 0xLKN</title>
+        <title>Posts on xLkn</title>
         <link>/posts/</link>
-        <description>Recent content in Posts on 0xLKN</description>
+        <description>Recent content in Posts on xLkn</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Paul Larkin</copyright>
-        <lastBuildDate>Fri, 24 Jan 2020 20:45:02 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 30 Jan 2019 20:45:02 +0000</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Hello World</title>
-            <link>/posts/hello-world/</link>
-            <pubDate>Fri, 24 Jan 2020 20:45:02 +0000</pubDate>
+            <title>Learning Static Analysis</title>
+            <link>/posts/staticanalysis/</link>
+            <pubDate>Wed, 30 Jan 2019 20:45:02 +0000</pubDate>
             
-            <guid>/posts/hello-world/</guid>
-            <description></description>
-            <content type="html"><![CDATA[]]></content>
+            <guid>/posts/staticanalysis/</guid>
+            <description>In the following blog post, I am going walk through several of the steps I took learning static analysis from practical malware analysis book and samclass.info. Samples are from practical malware book by no starch press. I have however found and used different tools in relation to the book recommendations to speed up the process.
+Lab01-02.exe – Packed exe. To start of, I ran the sample through detect-it-easy which indicated that the sample is packed with UPX.</description>
+            <content type="html"><![CDATA[<p>In the following blog post, I am going walk through several of the steps I took learning static analysis from practical malware analysis book and samclass.info. Samples are from practical malware book by no starch press. I have however found and used different tools in relation to the book recommendations to speed up the process.</p>
+<p>Lab01-02.exe – Packed exe.
+To start of, I ran the sample through detect-it-easy which indicated that the sample is packed with UPX.</p>
+
+    <figure class="center" >
+        <img src="/img/LearningStatic/DIE.png"  alt="strings screenshot"   />
+
+        
+    </figure>
+
+
+<p>I then ran the sample through strings.py. A python program built to work much like the strings command on Linux. Below you can that it references UPX and a small number of imports. Common with packed samples. From this, you can get clues to what is looking to do without unpacking it. For example, Wininet and InternetOpenA. Is related to the sample using internet API on windows to open communication with C&amp;C server.</p>
+
+    <img src="/img/LearningStatic/strings.png"  alt="strings screenshot"  class="center"  />
+
+
+<p>The next step was to unpacked the sample with UPX.</p>
+
+    <img src="/img/LearningStatic/upx.png"  alt="strings screenshot"  class="center"  />
+
+
+<p>Finally, I put the unpacked sample into pe-studio where we can see additional information below on the sample, in this case, it makes a call out to <a href="http://www.malwareanalysisbook.com">http://www.malwareanalysisbook.com</a></p>
+
+    <img src="/img/LearningStatic/PEstudio.png"  alt="strings screenshot"  class="center"  />
+
+
+]]></content>
+        </item>
+        
+        <item>
+            <title>Pico CTF 2018</title>
+            <link>/posts/picoctf2018/</link>
+            <pubDate>Fri, 28 Dec 2018 20:45:02 +0000</pubDate>
+            
+            <guid>/posts/picoctf2018/</guid>
+            <description>In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).
+It is a very fun event with a series of different challenges, that on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points.</description>
+            <content type="html"><![CDATA[
+    <img src="/img/pico18/lead.png"  alt="screenshot"  class="center"  />
+
+
+<p>In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).</p>
+<p>It is a very fun event with a series of different challenges, that on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points. I spent most of the weekend engaged in the CTF as a solo team. Doing so I learned a ton about steganography, Linux tools in the command line and different forms of cryptography, these areas where the most fun for me to delve into as I only had a basic understanding of the concept and never really spend a large amount of time looking into them or actively doing side projects related to these sections.</p>
+<p>During the CTF I leaned and used kali-Linux tools, Foremost and Binwalk for file carving analysis, ExifTool and stegSolve for image analysis and the events integrated web terminal to complete the general Linux command line. In the challenges I learned the benefit of using the man pages, the strings, grep and pipes command to search for and find specific words and strings within files with and without names. The strings command was especially useful as I now use it a lot when learning about static analysis of malicious software.</p>
+
+    <img src="/img/pico18/exif.png"  alt="screenshot"  class="center"  />
+
+
+<p>Overall, I had a blast playing it and am looking forward to next year’s challenges. To improve my chances in the next event I compete. I will be working on my binary and reverse engineering skills over the year as this is the section, I was quite interested in but lack the knowledge for the contest. Finishing in the top 2000 out of the 40,000 or more was quite pleasing, hopefully, I can achieve a top 1000 next year.</p>
+
+    <img src="/img/pico18/finalScore.png"  alt="screenshot"  class="center"  />
+
+
+]]></content>
         </item>
         
     </channel>

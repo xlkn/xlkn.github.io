@@ -1,25 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>0xLKN</title>
+    <title>xLkn</title>
     <link>/</link>
-    <description>Recent content on 0xLKN</description>
+    <description>Recent content on xLkn</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Paul Larkin</copyright>
-    <lastBuildDate>Fri, 24 Jan 2020 20:45:02 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 24 Jan 2020 20:40:46 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Hello World</title>
-      <link>/posts/hello-world/</link>
-      <pubDate>Fri, 24 Jan 2020 20:45:02 +0000</pubDate>
-      
-      <guid>/posts/hello-world/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title></title>
@@ -27,8 +18,28 @@
       <pubDate>Fri, 24 Jan 2020 20:40:46 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hi! My name is Paul Larkin. Am currently a computing student and in my spare time I love participating in CTF&#39;s, searching for bugs in mobile applications and reverse engineering malware. Amongst my other intrests, i also enjoy programing where am beginning to explore data analysis and machine learning related to automated malware detection.
-Interests  Malware Analysis Mobile and Web Application Security CTF&#39;s Data Science  </description>
+      <description>Hi! My name is Paul Larkin. I am currently a computing student and in my spare time I love participating in CTF&#39;s, competing in Kaggle competitions and reverse engineering malware. Amongst my other intrests, i also enjoy programing, where am beginning to explore the applications of machine learning and how it can be applied.
+Interests  Malware Analysis Mobile and Web Application Security CTFs Machine Learning &amp;amp; AI  </description>
+    </item>
+    
+    <item>
+      <title>Learning Static Analysis</title>
+      <link>/posts/staticanalysis/</link>
+      <pubDate>Wed, 30 Jan 2019 20:45:02 +0000</pubDate>
+      
+      <guid>/posts/staticanalysis/</guid>
+      <description>In the following blog post, I am going walk through several of the steps I took learning static analysis from practical malware analysis book and samclass.info. Samples are from practical malware book by no starch press. I have however found and used different tools in relation to the book recommendations to speed up the process.
+Lab01-02.exe – Packed exe. To start of, I ran the sample through detect-it-easy which indicated that the sample is packed with UPX.</description>
+    </item>
+    
+    <item>
+      <title>Pico CTF 2018</title>
+      <link>/posts/picoctf2018/</link>
+      <pubDate>Fri, 28 Dec 2018 20:45:02 +0000</pubDate>
+      
+      <guid>/posts/picoctf2018/</guid>
+      <description>In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).
+It is a very fun event with a series of different challenges, that on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points.</description>
     </item>
     
   </channel>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).
+It is a very fun event with a series of different challenges, that on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/posts/picoctf2018/" />
+
+
+    <title>
+        
+            Pico CTF 2018 :: xLkn 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
+
+
+
+
+<meta itemprop="name" content="Pico CTF 2018">
+<meta itemprop="description" content="In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).
+It is a very fun event with a series of different challenges, that on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points.">
+<meta itemprop="datePublished" content="2018-12-28T20:45:02&#43;00:00" />
+<meta itemprop="dateModified" content="2018-12-28T20:45:02&#43;00:00" />
+<meta itemprop="wordCount" content="338">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Pico CTF 2018"/>
+<meta name="twitter:description" content="In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).
+It is a very fun event with a series of different challenges, that on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2018-12-28 20:45:02 &#43;0000 UTC" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-clock"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>2 minutes
+
+            
+
+            </p>
+        </div>
+
+        <article>
+            <h1 class="post-title">
+                <a href="/posts/picoctf2018/">Pico CTF 2018</a>
+            </h1>
+
+            
+
+            <div class="post-content">
+                
+    <img src="/img/pico18/lead.png"  alt="screenshot"  class="center"  />
+
+
+<p>In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).</p>
+<p>It is a very fun event with a series of different challenges, that on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points. I spent most of the weekend engaged in the CTF as a solo team. Doing so I learned a ton about steganography, Linux tools in the command line and different forms of cryptography, these areas where the most fun for me to delve into as I only had a basic understanding of the concept and never really spend a large amount of time looking into them or actively doing side projects related to these sections.</p>
+<p>During the CTF I leaned and used kali-Linux tools, Foremost and Binwalk for file carving analysis, ExifTool and stegSolve for image analysis and the events integrated web terminal to complete the general Linux command line. In the challenges I learned the benefit of using the man pages, the strings, grep and pipes command to search for and find specific words and strings within files with and without names. The strings command was especially useful as I now use it a lot when learning about static analysis of malicious software.</p>
+
+    <img src="/img/pico18/exif.png"  alt="screenshot"  class="center"  />
+
+
+<p>Overall, I had a blast playing it and am looking forward to next year’s challenges. To improve my chances in the next event I compete. I will be working on my binary and reverse engineering skills over the year as this is the section, I was quite interested in but lack the knowledge for the contest. Finishing in the top 2000 out of the 40,000 or more was quite pleasing, hopefully, I can achieve a top 1000 next year.</p>
+
+    <img src="/img/pico18/finalScore.png"  alt="screenshot"  class="center"  />
+
+
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>338 Words</p>
+
+            <p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2018-12-28 20:45 &#43;0000</p>
+        </div>
+
+        
+            <div class="pagination">
+                <div class="pagination__title">
+                    <span class="pagination__title-h">Read other posts</span>
+                    <hr />
+                </div>
+
+                <div class="pagination__buttons">
+                    
+                        <span class="button previous">
+                            <a href="/posts/staticanalysis/">
+                                <span class="button__icon">←</span>
+                                <span class="button__text">Learning Static Analysis</span>
+                            </a>
+                        </span>
+                    
+
+                    
+                </div>
+            </div>
+        
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>&copy; 2020</span>
+            
+            <span>Paul Larkin</span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+    <div class="footer__inner">
+        <div class="footer__content">
+            <span>Powered by <a href="http://gohugo.io">Hugo</a></span>
+            <span>Made with &#10084; by <a href="https://github.com/rhazdon">rhazdon</a></span>
+        </div>
+    </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>
