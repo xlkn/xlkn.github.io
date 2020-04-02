@@ -6,11 +6,11 @@
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
         <copyright>Paul Larkin</copyright>
-        <lastBuildDate>Wed, 30 Jan 2019 20:45:02 +0000</lastBuildDate>
+        <lastBuildDate>Wed, 01 Apr 2020 08:19:11 +0000</lastBuildDate>
         <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
         
         <item>
-            <title>Learning Static Analysis</title>
+            <title>Learning x86 Static Analysis</title>
             <link>/posts/staticanalysis/</link>
             <pubDate>Wed, 30 Jan 2019 20:45:02 +0000</pubDate>
             
@@ -70,6 +70,25 @@ It is a very fun event with a series of different challenges, that on progressio
     <img src="/img/pico18/finalScore.png"  alt="screenshot"  class="center"  />
 
 
+]]></content>
+        </item>
+        
+        <item>
+            <title>Leading a team for Magic CTF</title>
+            <link>/posts/magicctf/</link>
+            <pubDate>Wed, 01 Apr 2020 08:19:11 +0000</pubDate>
+            
+            <guid>/posts/magicctf/</guid>
+            <description>Today, I am writing up a quick blog post on my thoughts and experience leading a cyber security CTF team and competing in Mid-Atlantic Gigabit Innovation Collaboratory (MAGIC) though my college.
+The event was participated in locally on registered sites with the competition end held online in the cloud accessed by SSH. All the challenges where unlocked and sitting on the server held in different level folders. Which wasn’t the same format as other capture the flag events, I have participated in where you unlock new challenges gradually after completing them.</description>
+            <content type="html"><![CDATA[
+    <img src="/img/magic/magicone.jpg"  class="center"  />
+
+
+<p>Today, I am writing up a quick blog post on my thoughts and experience leading a cyber security CTF team and competing in Mid-Atlantic Gigabit Innovation Collaboratory (MAGIC) though my college.</p>
+<p>The event was participated in locally on registered sites with the competition end held online in the cloud accessed by SSH. All the challenges where unlocked and sitting on the server held in different level folders. Which wasn’t the same format as other capture the flag events, I have participated in where you unlock new challenges gradually after completing them.</p>
+<p>As the only person on my team to have competed in different CTF’s and Wargames before it come to me to guide my fellow classmates on what to expect, various tools and guidance for challenges. It was really fun introducing them to common concepts in capture the flag. With the only downside being I didn’t get to tackle as many of the challenges as I would have liked to, which was a trade-off of leading the team, answering questions and pointing them in the right direction. For my team’s first time ever taking part in a CTF event. We came 33 out of 110 teams across America and Europe that where competition which to me is a great success.</p>
+<p>Which was a different but enjoyable experience and give me a boost in confidence knowing that I could clearly depart knowledge I had built up competing and help the team complete various challenges. Going forward, I look forward to more opportunities like this moving on to university.</p>
 ]]></content>
         </item>
         
