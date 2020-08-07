@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Paul Larkin</copyright>
-    <lastBuildDate>Wed, 18 Mar 2020 08:19:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 22:22:08 +0100</lastBuildDate>
     
 	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
     
@@ -20,6 +20,24 @@
       <guid>/projects/staticanalysis/</guid>
       <description>In the following blog post, I am going walk through several of the steps I took to start learning about static analysis for windows malware using both samclass.info and the Practical Malware Analysis book. The examples below are from the books exercise materials. The tools vary to the book recommendations as I found others that speed up the process.
 Lab01-02.exe – Packed exe. To start, I ran the sample through detect-it-easy which indicated that the sample was packed with UPX.</description>
+    </item>
+    
+    <item>
+      <title>From Exe to Pixels: Image Generation For Malware Classification</title>
+      <link>/projects/fromexetopixel/</link>
+      <pubDate>Wed, 22 Jul 2020 22:22:08 +0100</pubDate>
+      
+      <guid>/projects/fromexetopixel/</guid>
+      <description>This project came about after I was learning about image classification from fast.ai&amp;rsquo;s online course. The course started by learning to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will show the steps I took while i started to build a dataset with benign greyscale images using windows executables.</description>
+    </item>
+    
+    <item>
+      <title>Exploring the Unsplash API in Kotlin</title>
+      <link>/projects/kotlinapi/</link>
+      <pubDate>Wed, 08 Jul 2020 22:22:41 +0100</pubDate>
+      
+      <guid>/projects/kotlinapi/</guid>
+      <description>During the Covid-19 lockdown, I took the time to get familiar with both mobile development and the Kotlin programming language. I will start by saying it not the prettiest code as am still currently learning. The project was a small milestone in my understanding of both APIs and the Kotlin language. I wanted to challenge myself with an API I wasn&amp;rsquo;t familiar with so that I would have to read the developers documents and put in the time to make it work error by error.</description>
     </item>
     
     <item>

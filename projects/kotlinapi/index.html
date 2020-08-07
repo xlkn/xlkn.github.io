@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="During the Covid-19 lockdown, I took the time to get familiar with both mobile development and the Kotlin programming language. I will start by saying it not the prettiest code as am still currently learning. The project was a small milestone in my understanding of both APIs and the Kotlin language. I wanted to challenge myself with an API I wasn&amp;rsquo;t familiar with so that I would have to read the developers documents and put in the time to make it work error by error." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/projects/kotlinapi/" />
+
+
+    <title>
+        
+            Exploring the Unsplash API in Kotlin :: Paul (xLkn) 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
+
+
+
+
+<meta itemprop="name" content="Exploring the Unsplash API in Kotlin">
+<meta itemprop="description" content="During the Covid-19 lockdown, I took the time to get familiar with both mobile development and the Kotlin programming language. I will start by saying it not the prettiest code as am still currently learning. The project was a small milestone in my understanding of both APIs and the Kotlin language. I wanted to challenge myself with an API I wasn&rsquo;t familiar with so that I would have to read the developers documents and put in the time to make it work error by error.">
+<meta itemprop="datePublished" content="2020-07-08T22:22:41&#43;01:00" />
+<meta itemprop="dateModified" content="2020-07-08T22:22:41&#43;01:00" />
+<meta itemprop="wordCount" content="500">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="kotlin, android, programming, api, unsplash," /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="Exploring the Unsplash API in Kotlin"/>
+<meta name="twitter:description" content="During the Covid-19 lockdown, I took the time to get familiar with both mobile development and the Kotlin programming language. I will start by saying it not the prettiest code as am still currently learning. The project was a small milestone in my understanding of both APIs and the Kotlin language. I wanted to challenge myself with an API I wasn&rsquo;t familiar with so that I would have to read the developers documents and put in the time to make it work error by error."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-07-08 22:22:41 &#43;0100 BST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li><li><a href="/projects">Projects</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/projects/kotlinapi/">Exploring the Unsplash API in Kotlin</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>During the Covid-19 lockdown, I took the time to get familiar with both mobile development and the Kotlin programming language. I will start by saying it not the prettiest code as am still currently learning. The project was a small milestone in my understanding of both APIs and the Kotlin language. I wanted to challenge myself with an API I wasn&rsquo;t familiar with so that I would have to read the developers documents and put in the time to make it work error by error. Below I focused on the code specifically relating to the API implementation.</p>
+<p><em>Source code available on <strong><a href="https://github.com/xlkn/paws-app">github</a></strong></em></p>
+<p> </p>
+<h3 id="getting-the-correct-api-response">Getting the Correct API Response</h3>
+<p>The hardest part of the whole project was working out the correct API parameters. Starting I could get a selection of random images using the developer documents and just appending my access token to the request.</p>
+<p>The challenge was in finding a solution to search for a specific image topic and authenticate the request with the server. The solution I found, in the end, was the request below.</p>
+<p><code>https://api.unsplash.com/search/photos?query=dog&amp;client_id=&quot; + id</code></p>
+<p>Implemented in the Kotlin code below using OkHttp3 to make the request and GSON to serialize the response body into the application data class found below.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">fetchJSON</span>() {
+
+        <span style="color:#66d9ef">val</span> id = <span style="color:#e6db74">&#34;&#34;</span> <span style="color:#75715e">// Your Access code here
+</span><span style="color:#75715e"></span>        <span style="color:#66d9ef">val</span> Url = <span style="color:#e6db74">&#34; https://api.unsplash.com/search/photos?query=dog&amp;client_id=&#34;</span> + id
+
+        <span style="color:#66d9ef">val</span> request = Request.Builder().url(Url).build()
+
+        <span style="color:#66d9ef">val</span> client = OkHttpClient()
+
+        client.newCall(request).enqueue(<span style="color:#66d9ef">object</span> <span style="color:#960050;background-color:#1e0010">: </span><span style="color:#a6e22e">Callback</span> {
+            <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onResponse</span>(call: Call, response: Response) {
+                <span style="color:#66d9ef">val</span> httpBody = response.body<span style="color:#f92672">?.</span>string()
+
+                <span style="color:#66d9ef">val</span> gson = GsonBuilder().create()
+
+                <span style="color:#66d9ef">val</span> feed = gson.fromJson(httpBody, Feed<span style="color:#f92672">::</span><span style="color:#66d9ef">class</span>.java)
+
+                runOnUiThread{
+                    recycler_main.adapter = MainAdapter(feed)
+                }
+            }
+
+            <span style="color:#66d9ef">override</span> <span style="color:#66d9ef">fun</span> <span style="color:#a6e22e">onFailure</span>(call: Call, e: IOException) {
+                println(<span style="color:#e6db74">&#34;Error with request&#34;</span>)
+            }
+        })
+
+    }
+</code></pre></div><p> </p>
+<h3 id="the-data-class">The Data Class</h3>
+<p>To correctly create the data class I used the Pretty JSON browser plugin to see how the request-response was formatting. Then compared it to the JSON output in Android Studio and then wrote it out, checking for nullability as it was throwing a few errors.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-kotlin" data-lang="kotlin"><span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Feed</span>(<span style="color:#66d9ef">val</span> total: Int, <span style="color:#66d9ef">val</span> total_pages: Int, <span style="color:#66d9ef">val</span> results: List&lt;Results&gt;)
+
+<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Results</span>(
+              <span style="color:#66d9ef">val</span> id: String,
+              <span style="color:#66d9ef">val</span> created_at: String,
+              <span style="color:#66d9ef">val</span> updated_at: String?,
+              <span style="color:#66d9ef">val</span> promoted_at: String?,
+              <span style="color:#66d9ef">val</span> width: Int,
+              <span style="color:#66d9ef">val</span> height: Int,
+              <span style="color:#66d9ef">val</span> colour: String?,
+              <span style="color:#66d9ef">val</span> description: String?,
+              <span style="color:#66d9ef">val</span> alt_description: String?,
+              <span style="color:#66d9ef">val</span> urls: Urls,
+              <span style="color:#66d9ef">val</span> links: Links,
+              <span style="color:#66d9ef">val</span> user: User)
+
+<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Urls</span>(<span style="color:#66d9ef">val</span> raw: String,
+           <span style="color:#66d9ef">val</span> full: String,
+           <span style="color:#66d9ef">val</span> regular: String,
+           <span style="color:#66d9ef">val</span> small: String,
+           <span style="color:#66d9ef">val</span> thumb: String)
+
+<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Links</span>(<span style="color:#66d9ef">val</span> self: String,
+                 <span style="color:#66d9ef">val</span> html: String,
+                 <span style="color:#66d9ef">val</span> photos: String?,
+                 <span style="color:#66d9ef">val</span> likes: String?,
+                 <span style="color:#66d9ef">val</span> portfolio: String?,
+                 <span style="color:#66d9ef">val</span> download: String?,
+                 <span style="color:#66d9ef">val</span> download_location: String?)
+
+<span style="color:#66d9ef">data</span> <span style="color:#66d9ef">class</span> <span style="color:#a6e22e">User</span>(<span style="color:#66d9ef">val</span> id: String,
+                <span style="color:#66d9ef">val</span> username: String,
+                <span style="color:#66d9ef">val</span> name: String,
+                <span style="color:#66d9ef">val</span> portfolio_url: String?,
+                <span style="color:#66d9ef">val</span> bio: String?,
+                <span style="color:#66d9ef">val</span> location: String?,
+                <span style="color:#66d9ef">val</span> total_likes: Int,
+                <span style="color:#66d9ef">val</span> total_photos: Int,
+                <span style="color:#66d9ef">val</span> total_collection: Int,
+                <span style="color:#66d9ef">val</span> profile_image: Urls,
+                <span style="color:#66d9ef">val</span> links: Links)
+
+</code></pre></div><p> </p>
+<h3 id="final-thoughts">Final Thoughts</h3>
+<p>Thanks for reading this quick overview of my project. I look forward to developing more sophisticated application&rsquo;s. With this, I can take away a deeper understanding of some of the main components of building mobile applications that translate directly in my other computing interests in security.</p>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://unsplash.com/documentation">Unsplash Developers API Documentation</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  				<p>
+  					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="/tags/kotlin-android-programming-api-unsplash">kotlin, android, programming, api, unsplash</a></span>
+  				</p>
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+            <span>&copy; Paul Larkin </span>
+            <span> 2020</span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+       </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>

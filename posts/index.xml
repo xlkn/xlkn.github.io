@@ -56,5 +56,22 @@ We participated locally on registered sites while the competition end was held o
 ]]></content>
         </item>
         
+        <item>
+            <title>Using Twitter as an Educational Tool</title>
+            <link>/posts/twittered/</link>
+            <pubDate>Sat, 19 Jan 2019 22:14:59 +0100</pubDate>
+            
+            <guid>/posts/twittered/</guid>
+            <description>In this post, I am going to share how you can take social media and leverage it as an educational tool. This is most prevalent in relation to Twitter, you can turn your news feed into a gold mine of information, simply by following the right people in your subject area of interest.
+For me, that would be the computer security community and the steps I took doing this myself. To start off, I personally created a new twitter account specifically for this purpose and started following several open source content creators, malware analysts, and security researchers.</description>
+            <content type="html"><![CDATA[<p>In this post, I am going to share how you can take social media and leverage it as an educational tool. This is most prevalent in relation to Twitter, you can turn your news feed into a gold mine of information, simply by following the right people in your subject area of interest.</p>
+<p>For me, that would be the computer security community and the steps I took doing this myself. To start off, I personally created a new twitter account specifically for this purpose and started following several open source content creators, malware analysts, and security researchers.</p>
+<p>To find people to follow I would start with someone in your subject area whose content you already enjoy and see who they currently following and re-posting. Over time this will allow you to get exposed to interesting topics, current trends and up to date news. Another aspect of this is the opportunities and events related to your field, which allows you to find smaller conferences and networking events you may miss out on otherwise.</p>
+<p>I personally use twitters like feature as a bookmarking tool on my twitter timeline to keep track of interesting posts and links that I want to view later because we don&rsquo;t always have time to read a full blog post on the go.</p>
+<p>If you are interested in this field of study, feel free to check out my <a href="https://twitter.com/_paullarkin">twitter</a> for inspiration.</p>
+<p>Thanks for reading, hope this little tip helps you as much as it has me.</p>
+]]></content>
+        </item>
+        
     </channel>
 </rss>

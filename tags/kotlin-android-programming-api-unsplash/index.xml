@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>kotlin, android, programming, api, unsplash on Paul (xLkn)</title>
+    <link>/tags/kotlin-android-programming-api-unsplash/</link>
+    <description>Recent content in kotlin, android, programming, api, unsplash on Paul (xLkn)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Paul Larkin</copyright>
+    <lastBuildDate>Wed, 08 Jul 2020 22:22:41 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/kotlin-android-programming-api-unsplash/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Exploring the Unsplash API in Kotlin</title>
+      <link>/projects/kotlinapi/</link>
+      <pubDate>Wed, 08 Jul 2020 22:22:41 +0100</pubDate>
+      
+      <guid>/projects/kotlinapi/</guid>
+      <description>During the Covid-19 lockdown, I took the time to get familiar with both mobile development and the Kotlin programming language. I will start by saying it not the prettiest code as am still currently learning. The project was a small milestone in my understanding of both APIs and the Kotlin language. I wanted to challenge myself with an API I wasn&amp;rsquo;t familiar with so that I would have to read the developers documents and put in the time to make it work error by error.</description>
+    </item>
+    
+  </channel>
+</rss>

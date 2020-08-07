@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Paul Larkin</copyright>
-    <lastBuildDate>Wed, 18 Mar 2020 08:19:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 22 Jul 2020 22:22:08 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,8 +18,10 @@
       <pubDate>Fri, 24 Jan 2020 20:40:46 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hi! My name Paul and I’m a UK-based university student. In my spare time, I enjoy participating in CTF events, learning about mobile security and reverse engineering malware. Amongst other interests, I also enjoy programming, where am beginning to explore the applications of machine learning and mobile development.
-Skills &amp;amp; Interests  Malware Analysis Mobile Development Machine Learning &amp;amp; AI Mobile and Web Application Security CTFs &amp;amp; Challenge Platforms  Ranked #485/17,873 on Immersive Labs - Top 0.</description>
+      <description>Hi! My name Paul and I’m a UK-based university student. In my spare time, I enjoy participating in CTF events, learning about mobile security and reverse engineering malware.
+Interests  Mobile UI/UX &amp;amp; Development Malware Analysis Mobile and Web Application Security CTFs &amp;amp; Challenge Platforms  Ranked #485/17,873 on Immersive Labs - Top 0.02% (19/12/2019)
+Ranked #3490/131,832 on TryHackMe - Top 0.03% (17/07/2020)
+  Credits Powered by hugo | modified theme based on hello-friend-ng by rhazdon</description>
     </item>
     
     <item>
@@ -43,6 +45,24 @@ It is an engaging event with a series of different challenges. That on progressi
     </item>
     
     <item>
+      <title>From Exe to Pixels: Image Generation For Malware Classification</title>
+      <link>/projects/fromexetopixel/</link>
+      <pubDate>Wed, 22 Jul 2020 22:22:08 +0100</pubDate>
+      
+      <guid>/projects/fromexetopixel/</guid>
+      <description>This project came about after I was learning about image classification from fast.ai&amp;rsquo;s online course. The course started by learning to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will show the steps I took while i started to build a dataset with benign greyscale images using windows executables.</description>
+    </item>
+    
+    <item>
+      <title>Exploring the Unsplash API in Kotlin</title>
+      <link>/projects/kotlinapi/</link>
+      <pubDate>Wed, 08 Jul 2020 22:22:41 +0100</pubDate>
+      
+      <guid>/projects/kotlinapi/</guid>
+      <description>During the Covid-19 lockdown, I took the time to get familiar with both mobile development and the Kotlin programming language. I will start by saying it not the prettiest code as am still currently learning. The project was a small milestone in my understanding of both APIs and the Kotlin language. I wanted to challenge myself with an API I wasn&amp;rsquo;t familiar with so that I would have to read the developers documents and put in the time to make it work error by error.</description>
+    </item>
+    
+    <item>
       <title>Android Premium SMS Malware Analysis</title>
       <link>/projects/androidmalwareone/</link>
       <pubDate>Wed, 18 Mar 2020 08:19:11 +0000</pubDate>
@@ -62,6 +82,16 @@ As for the APK itself, the sample was found around September time back in 2019 a
       <guid>/posts/magicctf/</guid>
       <description>Today, I am writing up a quick blog post on my thoughts and experience leading a team and competing in Mid-Atlantic Gigabit Innovation Collaboratory (MAGIC) CTF.
 We participated locally on registered sites while the competition end was held online in the cloud accessed by SSH. All the challenges were unlocked at once and sitting on the server within level folders progressing in difficulty. Which was odd as it was the first time i had seen this format before.</description>
+    </item>
+    
+    <item>
+      <title>Using Twitter as an Educational Tool</title>
+      <link>/posts/twittered/</link>
+      <pubDate>Sat, 19 Jan 2019 22:14:59 +0100</pubDate>
+      
+      <guid>/posts/twittered/</guid>
+      <description>In this post, I am going to share how you can take social media and leverage it as an educational tool. This is most prevalent in relation to Twitter, you can turn your news feed into a gold mine of information, simply by following the right people in your subject area of interest.
+For me, that would be the computer security community and the steps I took doing this myself. To start off, I personally created a new twitter account specifically for this purpose and started following several open source content creators, malware analysts, and security researchers.</description>
     </item>
     
   </channel>
