@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Paul (xLkn)</title>
+    <link>/projects/</link>
+    <description>Recent content in Projects on Paul (xLkn)</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>Paul Larkin</copyright>
+    <lastBuildDate>Wed, 18 Mar 2020 08:19:11 +0000</lastBuildDate>
+    
+	<atom:link href="/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Learning Static Analysis For Windows Malware</title>
+      <link>/projects/staticanalysis/</link>
+      <pubDate>Wed, 30 Jan 2019 20:45:02 +0000</pubDate>
+      
+      <guid>/projects/staticanalysis/</guid>
+      <description>In the following blog post, I am going walk through several of the steps I took to start learning about static analysis for windows malware using both samclass.info and the Practical Malware Analysis book. The examples below are from the books exercise materials. The tools vary to the book recommendations as I found others that speed up the process.
+Lab01-02.exe – Packed exe. To start, I ran the sample through detect-it-easy which indicated that the sample was packed with UPX.</description>
+    </item>
+    
+    <item>
+      <title>Android Premium SMS Malware Analysis</title>
+      <link>/projects/androidmalwareone/</link>
+      <pubDate>Wed, 18 Mar 2020 08:19:11 +0000</pubDate>
+      
+      <guid>/projects/androidmalwareone/</guid>
+      <description>Sample hash: cf661506978f088f276a5a5bc4f0ea71101f99941840dd0864b2068ee2eb2271
+In this project, I will be detailing the steps that I took when analyzing a malicious sample after completing Maddie Stones Android Reverse Engineering 101 course. I found the course an excellent practical introduction and overview of reverse engineering mobile malware.
+The course is available at https://maddiestone.github.io/AndroidAppRE/ if your interested I can&amp;rsquo;t recommend it an enough.
+As for the APK itself, the sample was found around September time back in 2019 and was added to sk3ptre malware samples Github repository in February 2020.</description>
+    </item>
+    
+  </channel>
+</rss>

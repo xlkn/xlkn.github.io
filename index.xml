@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>xLkn</title>
+    <title>Paul (xLkn)</title>
     <link>/</link>
-    <description>Recent content on xLkn</description>
+    <description>Recent content on Paul (xLkn)</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Paul Larkin</copyright>
-    <lastBuildDate>Wed, 01 Apr 2020 08:19:11 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 08:19:11 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,50 +18,50 @@
       <pubDate>Fri, 24 Jan 2020 20:40:46 +0000</pubDate>
       
       <guid>/about/</guid>
-      <description>Hi! My name is Paul Larkin. I am currently a computing student and in my spare time I love participating in CTF&amp;rsquo;s, Kaggle competitions and reverse engineering malware. Amongst my other intrests, i also enjoy programing, where am beginning to explore the applications of machine learning and how it can be applied.
-Interests  Malware Analysis Mobile and Web Application Security CTFs Machine Learning &amp;amp; AI  </description>
+      <description>Hi! My name Paul and I’m a UK-based university student. In my spare time, I enjoy participating in CTF events, learning about mobile security and reverse engineering malware. Amongst other interests, I also enjoy programming, where am beginning to explore the applications of machine learning and mobile development.
+Skills &amp;amp; Interests  Malware Analysis Mobile Development Machine Learning &amp;amp; AI Mobile and Web Application Security CTFs &amp;amp; Challenge Platforms  Ranked #485/17,873 on Immersive Labs - Top 0.</description>
     </item>
     
     <item>
       <title>Learning Static Analysis For Windows Malware</title>
-      <link>/posts/staticanalysis/</link>
+      <link>/projects/staticanalysis/</link>
       <pubDate>Wed, 30 Jan 2019 20:45:02 +0000</pubDate>
       
-      <guid>/posts/staticanalysis/</guid>
-      <description>In the following blog post, I am going walk through several of the steps I took learning static analysis from practical malware analysis book and samclass.info. Samples are from practical malware book by no starch press. I have however found and used different tools in relation to the book recommendations to speed up the process.
-Lab01-02.exe – Packed exe. To start of, I ran the sample through detect-it-easy which indicated that the sample is packed with UPX.</description>
+      <guid>/projects/staticanalysis/</guid>
+      <description>In the following blog post, I am going walk through several of the steps I took to start learning about static analysis for windows malware using both samclass.info and the Practical Malware Analysis book. The examples below are from the books exercise materials. The tools vary to the book recommendations as I found others that speed up the process.
+Lab01-02.exe – Packed exe. To start, I ran the sample through detect-it-easy which indicated that the sample was packed with UPX.</description>
     </item>
     
     <item>
-      <title>Pico CTF 2018</title>
+      <title>What I Learnt From Competing in PicoCTF 2018</title>
       <link>/posts/picoctf2018/</link>
       <pubDate>Fri, 28 Dec 2018 20:45:02 +0000</pubDate>
       
       <guid>/posts/picoctf2018/</guid>
       <description>In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).
-It is a very fun event with a series of different challenges, that on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points.</description>
+It is an engaging event with a series of different challenges. That on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points.</description>
     </item>
     
     <item>
-      <title>Leading a team for Magic CTF</title>
+      <title>Android Premium SMS Malware Analysis</title>
+      <link>/projects/androidmalwareone/</link>
+      <pubDate>Wed, 18 Mar 2020 08:19:11 +0000</pubDate>
+      
+      <guid>/projects/androidmalwareone/</guid>
+      <description>Sample hash: cf661506978f088f276a5a5bc4f0ea71101f99941840dd0864b2068ee2eb2271
+In this project, I will be detailing the steps that I took when analyzing a malicious sample after completing Maddie Stones Android Reverse Engineering 101 course. I found the course an excellent practical introduction and overview of reverse engineering mobile malware.
+The course is available at https://maddiestone.github.io/AndroidAppRE/ if your interested I can&amp;rsquo;t recommend it an enough.
+As for the APK itself, the sample was found around September time back in 2019 and was added to sk3ptre malware samples Github repository in February 2020.</description>
+    </item>
+    
+    <item>
+      <title>Leading a Team for MagicCTF</title>
       <link>/posts/magicctf/</link>
-      <pubDate>Wed, 01 Apr 2020 08:19:11 +0000</pubDate>
+      <pubDate>Thu, 05 Dec 2019 08:19:11 +0000</pubDate>
       
       <guid>/posts/magicctf/</guid>
-      <description>Today, I am writing up a quick blog post on my thoughts and experience leading a cyber security CTF team and competing in Mid-Atlantic Gigabit Innovation Collaboratory (MAGIC) though my college.
-The event was participated in locally on registered sites with the competition end held online in the cloud accessed by SSH. All the challenges where unlocked and sitting on the server held in different level folders. Which wasn’t the same format as other capture the flag events, I have participated in where you unlock new challenges gradually after completing them.</description>
-    </item>
-    
-    <item>
-      <title>Treatment for Diabetes APK Anlaysis</title>
-      <link>/malware-analysis/androidmalwareone/</link>
-      <pubDate>Wed, 01 Apr 2020 08:19:11 +0000</pubDate>
-      
-      <guid>/malware-analysis/androidmalwareone/</guid>
-      <description>Sample hash: cf661506978f088f276a5a5bc4f0ea71101f99941840dd0864b2068ee2eb2271
-This is the first sample I have reversed myself after completing Maddie Stones Android Reverse Engineering 101 course. Which was an excellent practical introduction and overview of reverse engineering mobile malware.
-It&amp;rsquo;s available at https://maddiestone.github.io/AndroidAppRE/ if your interested, i cant recommend it an enough.
-As for the sample, the APK itself was found around September time back in 2019 and was added to sk3ptre malware samples github repository in February 2020.</description>
+      <description>Today, I am writing up a quick blog post on my thoughts and experience leading a team and competing in Mid-Atlantic Gigabit Innovation Collaboratory (MAGIC) CTF.
+We participated locally on registered sites while the competition end was held online in the cloud accessed by SSH. All the challenges were unlocked at once and sitting on the server within level folders progressing in difficulty. Which was odd as it was the first time i had seen this format before.</description>
     </item>
     
   </channel>
