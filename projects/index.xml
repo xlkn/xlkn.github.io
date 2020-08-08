@@ -13,25 +13,6 @@
     
     
     <item>
-      <title>Learning Static Analysis For Windows Malware</title>
-      <link>/projects/staticanalysis/</link>
-      <pubDate>Wed, 30 Jan 2019 20:45:02 +0000</pubDate>
-      
-      <guid>/projects/staticanalysis/</guid>
-      <description>In the following blog post, I am going walk through several of the steps I took to start learning about static analysis for windows malware using both samclass.info and the Practical Malware Analysis book. The examples below are from the books exercise materials. The tools vary to the book recommendations as I found others that speed up the process.
-Lab01-02.exe – Packed exe. To start, I ran the sample through detect-it-easy which indicated that the sample was packed with UPX.</description>
-    </item>
-    
-    <item>
-      <title>From Exe to Pixels: Image Generation For Malware Classification</title>
-      <link>/projects/fromexetopixel/</link>
-      <pubDate>Wed, 22 Jul 2020 22:22:08 +0100</pubDate>
-      
-      <guid>/projects/fromexetopixel/</guid>
-      <description>This project came about after I was learning about image classification from fast.ai&amp;rsquo;s online course. The course started by learning to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will show the steps I took while i started to build a dataset with benign greyscale images using windows executables.</description>
-    </item>
-    
-    <item>
       <title>Exploring the Unsplash API in Kotlin</title>
       <link>/projects/kotlinapi/</link>
       <pubDate>Wed, 08 Jul 2020 22:22:41 +0100</pubDate>
@@ -50,6 +31,25 @@ Lab01-02.exe – Packed exe. To start, I ran the sample through detect-it-easy w
 In this project, I will be detailing the steps that I took when analyzing a malicious sample after completing Maddie Stones Android Reverse Engineering 101 course. I found the course an excellent practical introduction and overview of reverse engineering mobile malware.
 The course is available at https://maddiestone.github.io/AndroidAppRE/ if your interested I can&amp;rsquo;t recommend it an enough.
 As for the APK itself, the sample was found around September time back in 2019 and was added to sk3ptre malware samples Github repository in February 2020.</description>
+    </item>
+    
+    <item>
+      <title>Learning Static Analysis For Windows Malware</title>
+      <link>/projects/staticanalysis/</link>
+      <pubDate>Wed, 30 Jan 2019 20:45:02 +0000</pubDate>
+      
+      <guid>/projects/staticanalysis/</guid>
+      <description>In the following blog post, I am going walk through several of the steps I took to start learning about static analysis for windows malware using both samclass.info and the Practical Malware Analysis book. The examples below are from the books exercise materials. The tools vary to the book recommendations as I found others that speed up the process.
+Lab01-02.exe – Packed exe. To start, I ran the sample through detect-it-easy which indicated that the sample was packed with UPX.</description>
+    </item>
+    
+    <item>
+      <title>From Exe to Pixels: Image Generation For Malware Classification</title>
+      <link>/projects/fromexetopixel/</link>
+      <pubDate>Wed, 22 Jul 2020 22:22:08 +0100</pubDate>
+      
+      <guid>/projects/fromexetopixel/</guid>
+      <description>This project came about after I was learning about image classification from fast.ai&amp;rsquo;s online course. The course started by learning to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will show the steps I took while i started to build a dataset with benign greyscale images using windows executables.</description>
     </item>
     
   </channel>

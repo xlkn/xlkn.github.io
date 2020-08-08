@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/projects/kotlinapi/</loc>
+    <lastmod>2020-07-08T22:22:41+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/projects/androidmalwareone/</loc>
+    <lastmod>2020-03-18T08:19:11+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/about/</loc>
     <lastmod>2020-01-24T20:40:46+00:00</lastmod>
   </url>
@@ -23,11 +33,6 @@
   </url>
   
   <url>
-    <loc>/tags/machine-learning-windows-malware-python-programming/</loc>
-    <lastmod>2020-07-22T22:22:08+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/</loc>
     <lastmod>2020-07-22T22:22:08+01:00</lastmod>
   </url>
@@ -35,26 +40,6 @@
   <url>
     <loc>/projects/</loc>
     <lastmod>2020-07-22T22:22:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2020-07-22T22:22:08+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/projects/kotlinapi/</loc>
-    <lastmod>2020-07-08T22:22:41+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/kotlin-android-programming-api-unsplash/</loc>
-    <lastmod>2020-07-08T22:22:41+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/projects/androidmalwareone/</loc>
-    <lastmod>2020-03-18T08:19:11+00:00</lastmod>
   </url>
   
   <url>
@@ -74,6 +59,10 @@
   
   <url>
     <loc>/categories/</loc>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
   </url>
   
 </urlset>
