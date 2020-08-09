@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="">
+<meta name="description" content="This write-up came about after learning about image classification from fast.ai&amp;rsquo;s online course. The course started out by teaching participants to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will showing the steps I took while i started to build a dataset with benign greyscale images using windows executables." />
+<meta name="keywords" content="" />
+<meta name="robots" content="noodp" />
+<meta name="theme-color" content="" />
+<link rel="canonical" href="/work/fromexetopixel/" />
+
+
+    <title>
+        
+            From Exe to Pixels: Image Generation For Malware Classification :: Paul (xLkn) 
+        
+    </title>
+
+
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.2.1/css/flag-icon.min.css" rel="stylesheet"
+    type="text/css">
+
+
+
+<link rel="stylesheet" href="/main.min.5dcefbf8102eb536dd3e2de53ffebfa58599ab2435c241a0db81728a5e015f2e.css">
+
+
+
+
+<meta itemprop="name" content="From Exe to Pixels: Image Generation For Malware Classification">
+<meta itemprop="description" content="This write-up came about after learning about image classification from fast.ai&rsquo;s online course. The course started out by teaching participants to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will showing the steps I took while i started to build a dataset with benign greyscale images using windows executables.">
+<meta itemprop="datePublished" content="2020-07-22T22:22:08&#43;01:00" />
+<meta itemprop="dateModified" content="2020-07-22T22:22:08&#43;01:00" />
+<meta itemprop="wordCount" content="505">
+<meta itemprop="image" content="/"/>
+
+
+
+<meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="/"/>
+
+<meta name="twitter:title" content="From Exe to Pixels: Image Generation For Malware Classification"/>
+<meta name="twitter:description" content="This write-up came about after learning about image classification from fast.ai&rsquo;s online course. The course started out by teaching participants to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will showing the steps I took while i started to build a dataset with benign greyscale images using windows executables."/>
+
+
+
+
+
+    <meta property="article:published_time" content="2020-07-22 22:22:08 &#43;0100 BST" />
+
+
+
+
+
+
+
+
+    </head>
+
+    <body class="">
+        <div class="container">
+            <header class="header">
+    <span class="header__inner">
+        <a href="/" style="text-decoration: none;">
+    <div class="logo">
+        
+            <span class="logo__mark">></span>
+            <span class="logo__text">$ cd /home/</span>
+            <span class="logo__cursor" style=""></span>
+        
+    </div>
+</a>
+
+
+        <span class="header__right">
+            
+                <nav class="menu">
+    <ul class="menu__inner"><li><a href="/about">About</a></li><li><a href="/posts">Posts</a></li><li><a href="/work">Work</a></li>
+    </ul>
+</nav>
+
+                <span class="menu-trigger">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"/>
+                    </svg>
+                </span>
+            
+
+            <span class="theme-toggle unselectable"><svg class="theme-toggler" width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M22 41C32.4934 41 41 32.4934 41 22C41 11.5066 32.4934 3 22
+  3C11.5066 3 3 11.5066 3 22C3 32.4934 11.5066 41 22 41ZM7 22C7
+  13.7157 13.7157 7 22 7V37C13.7157 37 7 30.2843 7 22Z"/>
+</svg>
+</span>
+        </span>
+    </span>
+</header>
+
+
+            <div class="content">
+                
+    <main class="post">
+
+        <div class="post-info">
+            
+            </p>
+        </div>
+
+        <article>
+            <h2 class="post-title"><a href="/work/fromexetopixel/">From Exe to Pixels: Image Generation For Malware Classification</a></h2>
+
+            
+
+            <div class="post-content">
+                <p>This write-up came about after learning about image classification from fast.ai&rsquo;s online course. The course started out by teaching participants to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will showing the steps I took while i started to build a dataset with benign greyscale images using windows executables.</p>
+<h3 id="the-how">The How</h3>
+<p>While research the topic I came across the paper <strong>Malware Images: Visualization and Automatic Classification by L. Nataraj, S. Karthikeyan, G. Jacob, and B. S. Manjunath.</strong> Published in July 2011 the authors had created the Malimg Dataset with 25 different families of malware.</p>
+<p>My idea was to build a benign image set to compare against the dataset sample images and see if how well a Convolutional Neural Networks(CNN) could classify them. The code below comes directly from the paper but i have since updated it to python 3 and found new packages as the imported image library was deprecated.</p>
+<h3 id="getting-useable-files---windows-vm">Getting Useable Files - Windows VM</h3>
+<p>As am using a mac i did not direcly have access to windows files so the next best option was to boot up a window virtual machine and copy across the files. This didn&rsquo;t quite work as i had a few issues the VM guest additions instead i uploaded a copy of the program files from the C drive to Google Drive and then download them locally.
+ </p>
+<p>
+    <img src="/img/pixel/windowsVM.png"  class="center"  />
+
+
+ </p>
+<p>Once i had the windows files i sorted them into a folder containing only the executatables for this example.</p>
+<p> 
+
+    <img src="/img/pixel/windowsProgramfiles.png"  class="center"  />
+
+</p>
+<p>
+    <img src="/img/pixel/windowsExes.png"  class="center"  />
+
+
+ </p>
+<h3 id="image-generation">Image Generation</h3>
+<p>The code below as noted is from the authors paper, the two changes i made where to cast the re-shape funcation as a int from a float becasue it keep throwing an float error. The other was to find a replacement image libary that took numpy arrays as input, pyPng served as a good alternative.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#f92672">import</span> numpy <span style="color:#f92672">as</span> np
+<span style="color:#f92672">import</span> scipy<span style="color:#f92672">,</span> os<span style="color:#f92672">,</span> array<span style="color:#f92672">,</span> png
+ 
+filename <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;ieinstal.exe&#39;</span>
+f <span style="color:#f92672">=</span> open(filename,<span style="color:#e6db74">&#39;rb&#39;</span>)
+ln <span style="color:#f92672">=</span> os<span style="color:#f92672">.</span>path<span style="color:#f92672">.</span>getsize(filename) <span style="color:#75715e"># length of file in bytes</span>
+width <span style="color:#f92672">=</span> <span style="color:#ae81ff">256</span>
+rem <span style="color:#f92672">=</span> ln<span style="color:#f92672">%</span>width
+
+a <span style="color:#f92672">=</span> array<span style="color:#f92672">.</span>array(<span style="color:#e6db74">&#34;B&#34;</span>) 
+a<span style="color:#f92672">.</span>fromfile(f,ln<span style="color:#f92672">-</span>rem)
+f<span style="color:#f92672">.</span>close()
+
+h <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>reshape(a,(len(a)<span style="color:#f92672">//</span>width,width)) <span style="color:#75715e"># change from float to int</span>
+g <span style="color:#f92672">=</span> np<span style="color:#f92672">.</span>uint8(h)
+
+<span style="color:#75715e">#scipy.misc.imsave(&#39;iedvtool.png&#39;,g) # save the image -&gt; old method, now deprecated.</span>
+
+<span style="color:#75715e">#new lib pyPng</span>
+png<span style="color:#f92672">.</span>from_array(g, mode<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;L&#34;</span>)<span style="color:#f92672">.</span>save(<span style="color:#e6db74">&#34;/Users/user/Desktop/imgs/ieinstal.png&#34;</span>)
+
+</code></pre></div><p> </p>
+<p>Image Generated example
+ </p>
+<p>
+    <img src="/img/pixel/imagePixel.png"  class="center"  />
+
+
+ </p>
+<p>Once working I continued processing all sample executables in the folder above making train and validation folders to work with. Born out of interest and curiously I look forward to contining to collecting more sample for the data set and running it through a CNN.
+ </p>
+
+    <img src="/img/pixel/ImagesGenerated.png"  class="center"  />
+
+
+<p> </p>
+<p>Thanks for reading and I hope this give you a small insight into one method that can be used for malware classification and the tools to create your own datasets.</p>
+<h3 id="future-development">Future Development</h3>
+<ul>
+<li>Automate the process with the python os package and os.walk()</li>
+<li>Upload to an AWS instance for classification</li>
+</ul>
+<h3 id="references">References</h3>
+<ul>
+<li><a href="https://dl.acm.org/doi/10.1145/2016904.2016908">The Paper</a></li>
+<li><a href="https://sarvamblog.blogspot.com/2014/08/supervised-classification-with-k-fold.html">Author&rsquo;s Blog</a></li>
+<li><a href="http://sarvam.ece.ucsb.edu/">Author&rsquo;s Project Website</a></li>
+</ul>
+
+            </div>
+        </article>
+
+        <hr />
+
+        <div class="post-info">
+  			</div>
+
+        
+    </main>
+
+            </div>
+
+            
+                <footer class="footer">
+    <div class="footer__inner">
+        <div class="footer__content">
+            
+            
+            <span>&copy; Paul Larkin </span>
+            <span> 2020</span>
+            <span> <a href="/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a></span>
+        </div>
+    </div>
+       </div>
+</footer>
+
+            
+        </div>
+
+        
+
+
+
+
+<script type="text/javascript" src="/bundle.min.2d5469329143160ae2456a69c3c76dc2d0a3b212b46afe291a51bd68650ed6f8697e001dab54f1c272c77ce08092a8c55e5bb4314e0ee334aab4b927ec896638.js" integrity="sha512-LVRpMpFDFgriRWppw8dtwtCjshK0av4pGlG9aGUO1vhpfgAdq1TxwnLHfOCAkqjFXlu0MU4O4zSqtLkn7IlmOA=="></script>
+
+
+
+    </body>
+</html>
