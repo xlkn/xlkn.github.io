@@ -52,5 +52,15 @@ Lab01-02.exe – Packed exe. To start, I ran the sample through detect-it-easy w
       <description>This write-up came about after learning about image classification from fast.ai&amp;rsquo;s online course. The course started out by teaching participants to classify cats and dogs images, this was cool at the time but then my mind shifted to can this be used to classify malware and how? The simple answer, yes, but finding a dataset with benign images now that was a problem. So in this write-up, I will showing the steps I took while i started to build a dataset with benign greyscale images using windows executables.</description>
     </item>
     
+    <item>
+      <title>The Graduate Re-Brand &amp; Logo Design</title>
+      <link>/work/graduate/</link>
+      <pubDate>Fri, 10 Aug 2018 15:34:47 +0100</pubDate>
+      
+      <guid>/work/graduate/</guid>
+      <description>I developed this project after entering my creative brief and mock up for redesign of southern regional college, graduate restaurant. The organisers where looking for concept ideas based on the remodelling and renovation of the restaurants interior.
+My design style at the time was heavy focused on modern minimalism design trends with muted or neutral colours and designs that I had seen other trendy restaurants from around the world implement in their own ways.</description>
+    </item>
+    
   </channel>
 </rss>
