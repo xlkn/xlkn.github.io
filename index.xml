@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>Paul Larkin</copyright>
-    <lastBuildDate>Wed, 22 Jul 2020 22:22:08 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 10 Aug 2020 15:32:05 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
@@ -62,6 +62,16 @@ Lab01-02.exe – Packed exe. To start, I ran the sample through detect-it-easy w
       <guid>/posts/picoctf2018/</guid>
       <description>In this blog post, I want to share my thoughts on competing in a live CTF for the first time. The event was Pico CTF hosted online and created by Carnegie Mellon University (CMU) Cybersecurity and the world number two CTF team currently at the time of writing Plaid Parliament of Pwning (PPP).
 It is an engaging event with a series of different challenges. That on progression push you out your comfort zone just enough for you to have to research and learn new tools and techniques to capture the flag and earn points.</description>
+    </item>
+    
+    <item>
+      <title>Cyber Gamification: Immersive Labs and TryHackMe</title>
+      <link>/posts/gamificiation/</link>
+      <pubDate>Mon, 10 Aug 2020 15:32:05 +0100</pubDate>
+      
+      <guid>/posts/gamificiation/</guid>
+      <description>All of us have heard of how gaming can become addictive. As previous gamer I know all too well how addictive and competitive video games can become. But, what if we can apply that same magic to more positive skill training? Specifically in cyber security given that hands on nature of various techniques and roles in the sector.
+I&amp;rsquo;m going to do just that, well from my own personal perspective and experience with cyber wargaming platforms such as immersive labs and TryHackMe.</description>
     </item>
     
     <item>
