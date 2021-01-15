@@ -40,14 +40,14 @@ As for the APK itself, the sample was found around September time back in 2019 a
       
       <guid>/about/</guid>
       <description>Hi! My name Paul and I’m a UK-based university student. In my spare time, I enjoy bring my ideas to life through programming, design and participating in tech events.
-I&amp;rsquo;m currently learning about mobile development, UX and re-learning frontend development technologies so you can expect more posts in these realms soon!
+I&amp;rsquo;m currently learning about mobile development, machine learning and frontend development technologies so you can expect more posts in these realms soon!
 Thanks for dropping by!
 You can reach me at paularkin (@) hotmail.com or follow me on twitter
   Credits Powered by hugo | modified theme based on hello-friend-ng by rhazdon</description>
     </item>
     
     <item>
-      <title>Learning Static Analysis For Windows Malware</title>
+      <title>Practical Malware Analysis - Static Analysis Practice</title>
       <link>/work/staticanalysis/</link>
       <pubDate>Wed, 30 Jan 2019 20:45:02 +0000</pubDate>
       
